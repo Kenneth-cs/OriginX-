@@ -102,23 +102,12 @@ export function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="text-6xl md:text-8xl font-black tracking-tight mb-6 leading-[1.1] font-['Space_Grotesk']"
+            className="text-6xl md:text-8xl font-black tracking-tight mb-8 leading-[1.1] font-['Space_Grotesk']"
           >
             <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-500 to-cyan-400 drop-shadow-sm">{heroData.title.line1_highlight}</span><span className="text-white">{heroData.title.line1_white}</span>
             <br />
-            <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-purple-500 to-cyan-400 drop-shadow-sm">{heroData.title.line2_highlight}</span><span className="text-white">{heroData.title.line2_white}</span>
+            <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-600 drop-shadow-sm">{heroData.title.line2_highlight}</span><span className="text-white">{heroData.title.line2_white}</span>
           </motion.h1>
-
-          <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.3 }}
-            className="flex flex-wrap justify-center gap-3 mb-10 text-xs md:text-sm font-medium text-slate-300 uppercase tracking-wider font-['Space_Grotesk']"
-          >
-            {heroData.keywords.map((kw: string, i: number) => (
-              <span key={i} className="px-4 py-2 rounded-lg bg-white/5 border border-white/10 backdrop-blur-sm">{kw}</span>
-            ))}
-          </motion.div>
           
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -126,11 +115,8 @@ export function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="max-w-3xl text-base md:text-lg text-slate-400 leading-relaxed"
           >
-            <p className="mb-4">
+            <p>
               {heroData.description}
-            </p>
-            <p className="text-blue-400 font-mono text-sm opacity-80 mt-6 border-t border-white/5 pt-6 inline-block">
-              {heroData.quote}
             </p>
           </motion.div>
 
@@ -138,7 +124,7 @@ export function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="flex flex-col sm:flex-row items-center gap-4 mt-12"
+            className="flex flex-col sm:flex-row items-center gap-4 mt-10"
           >
             <a href="#matrix" className="group relative px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 font-semibold flex items-center gap-2 hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(139,92,246,0.4)] hover:shadow-[0_0_40px_rgba(139,92,246,0.6)] text-white">
               开始探索矩阵
