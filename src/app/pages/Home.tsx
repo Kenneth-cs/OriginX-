@@ -89,7 +89,7 @@ export function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-sm font-medium text-blue-400 mb-8 backdrop-blur-md shadow-[0_0_15px_rgba(59,130,246,0.2)]"
+            className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-sm font-medium text-blue-400 mb-10 backdrop-blur-md shadow-[0_0_15px_rgba(59,130,246,0.2)]"
           >
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
@@ -102,7 +102,7 @@ export function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="text-6xl md:text-8xl font-black tracking-tight mb-8 leading-[1.1] font-['Space_Grotesk']"
+            className="text-6xl md:text-8xl font-black tracking-tight mb-12 leading-[1.1] font-['Space_Grotesk']"
           >
             <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-500 to-cyan-400 drop-shadow-sm">{heroData.title.line1_highlight}</span><span className="text-white">{heroData.title.line1_white}</span>
             <br />
@@ -113,7 +113,7 @@ export function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="max-w-3xl text-base md:text-lg text-slate-400 leading-relaxed"
+            className="max-w-3xl text-base md:text-lg text-slate-400 leading-loose"
           >
             <p>
               {heroData.description}
@@ -124,7 +124,7 @@ export function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="flex flex-col sm:flex-row items-center gap-4 mt-10"
+            className="flex flex-col sm:flex-row items-center gap-4 mt-16"
           >
             <a href="#matrix" className="group relative px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 font-semibold flex items-center gap-2 hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(139,92,246,0.4)] hover:shadow-[0_0_40px_rgba(139,92,246,0.6)] text-white">
               开始探索矩阵
