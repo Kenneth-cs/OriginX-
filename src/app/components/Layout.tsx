@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router';
 import { Sparkles, Terminal, Menu, X } from 'lucide-react';
 import { SEO } from './SEO';
+import OriginXLogo from './Logo';
 
 export function Layout() {
   const location = useLocation();
@@ -42,19 +43,19 @@ export function Layout() {
       {/* Navbar (Glassmorphism) */}
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-[#050505]/40 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3 cursor-pointer group relative z-50" onClick={(e) => {
+          <Link to="/" className="flex items-center gap-3.5 cursor-pointer group relative z-50" onClick={(e) => {
             if (isHome) {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }
             setMobileMenuOpen(false);
           }}>
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-[0_0_15px_rgba(139,92,246,0.4)] group-hover:shadow-[0_0_20px_rgba(139,92,246,0.6)] transition-all">
-              <Sparkles className="w-4 h-4 text-white" />
+            <div className="w-[42px] h-[42px] flex items-center justify-center transition-all group-hover:scale-105 group-hover:drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]">
+              <OriginXLogo className="w-full h-full" />
             </div>
-            <div className="flex flex-col">
-              <span className="text-[10px] font-bold tracking-widest text-slate-300">源极科技</span>
-              <span className="text-xl font-bold tracking-widest uppercase font-['Space_Grotesk'] leading-none mt-0.5">Origin<span className="text-blue-400">X</span></span>
+            <div className="flex items-center gap-3 h-full border-l border-white/10 pl-3.5 py-1">
+              <span className="text-xl font-bold tracking-[0.2em] text-white leading-none font-['Inter']">源极科技</span>
+              <span className="text-sm font-medium tracking-[0.1em] uppercase text-slate-400 leading-none mt-[2px] font-['Space_Grotesk']">Origin<span className="text-blue-400">X</span></span>
             </div>
           </Link>
           
@@ -73,7 +74,7 @@ export function Layout() {
           </div>
 
           <Link to="/#terminal" onClick={(e) => handleScroll(e, 'terminal')} className="hidden md:flex px-6 py-2.5 rounded-full text-sm font-medium bg-white/5 hover:bg-white/10 border border-white/10 transition-all duration-300 items-center gap-2 group backdrop-blur-sm">
-            联络中心
+            合作联系
             <Terminal className="w-4 h-4 group-hover:text-blue-400 transition-colors" />
           </Link>
 
@@ -101,7 +102,7 @@ export function Layout() {
               源极视界
             </Link>
             <Link to="/#terminal" onClick={(e) => handleScroll(e, 'terminal')} className="mt-8 flex justify-center px-6 py-3 rounded-xl font-medium bg-white/10 border border-white/20 items-center gap-2">
-              联络中心
+              合作联系
               <Terminal className="w-5 h-5 text-blue-400" />
             </Link>
           </div>
@@ -114,18 +115,19 @@ export function Layout() {
       {/* Footer */}
       <footer className="border-t border-white/10 bg-[#020202] py-12 relative z-10 mt-auto">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex items-center gap-2">
-            <Sparkles className="w-4 h-4 text-blue-500" />
-            <div className="flex flex-col">
-              <span className="text-xs font-bold tracking-widest uppercase font-['Space_Grotesk'] text-slate-300 leading-none">Origin<span className="text-blue-400">X</span></span>
+          <div className="flex items-center gap-3 opacity-80 hover:opacity-100 transition-opacity">
+            <OriginXLogo className="w-8 h-8" />
+            <div className="flex items-center gap-2.5 border-l border-white/20 pl-3">
+              <span className="text-sm font-bold tracking-[0.2em] text-slate-300 leading-none">源极科技</span>
+              <span className="text-xs font-bold tracking-widest uppercase font-['Space_Grotesk'] text-slate-500 leading-none mt-[2px]">Origin<span className="text-blue-400">X</span></span>
             </div>
           </div>
-          <div className="text-slate-600 text-sm font-mono">
+          <div className="text-slate-600 text-xs font-mono">
             &copy; {new Date().getFullYear()} 源极科技. All rights reserved.
           </div>
-          <div className="flex gap-6 text-sm text-slate-500 font-mono">
-            <Link to="#" className="hover:text-blue-400 transition-colors">/Privacy</Link>
-            <Link to="#" className="hover:text-blue-400 transition-colors">/Terms</Link>
+          <div className="flex gap-6 text-xs text-slate-500 font-mono">
+            <Link to="#" className="hover:text-blue-400 transition-colors">/隐私政策</Link>
+            <Link to="#" className="hover:text-blue-400 transition-colors">/服务条款</Link>
           </div>
         </div>
       </footer>

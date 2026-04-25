@@ -131,7 +131,7 @@ export function Home() {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a href="#terminal" className="px-8 py-4 rounded-full bg-white/5 border border-white/10 font-semibold hover:bg-white/10 transition-colors backdrop-blur-sm text-slate-300 hover:text-white">
-              进入联络中心
+              发起合作
             </a>
           </motion.div>
         </section>
@@ -319,9 +319,9 @@ export function Home() {
             <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
               <FadeIn>
                 <span className="text-indigo-400 font-mono text-sm tracking-widest uppercase mb-3 block flex items-center gap-2">
-                  <Terminal className="w-4 h-4" /> 03 / Terminal
+                  03 / Terminal
                 </span>
-                <h2 className="text-4xl md:text-5xl font-bold mb-4 font-['Space_Grotesk'] text-white">联络中心</h2>
+                <h2 className="text-4xl md:text-5xl font-bold mb-4 font-['Space_Grotesk'] text-white">合作联系</h2>
                 <p className="text-slate-400 text-sm md:text-base">开放合作・双向共生 —— 不局限传统甲乙双方模式，以解决真实问题为核心。</p>
               </FadeIn>
               <FadeIn delay={0.2} className="flex items-center gap-3 text-xs md:text-sm font-mono text-slate-400 bg-white/5 px-4 py-2.5 rounded-lg border border-white/10 backdrop-blur-md">
@@ -368,6 +368,11 @@ export function Home() {
                       <div className="flex gap-4"><div className="text-blue-400 font-bold shrink-0">~ $</div><div className="text-slate-300"><span className="text-blue-300">项目组队：</span>AIGC/开发方向的竞赛或项目合作、开源共建</div></div>
                       <div className="flex gap-4"><div className="text-blue-400 font-bold shrink-0">~ $</div><div className="text-slate-300"><span className="text-blue-300">互测互用：</span>产品互测、创意共创（互相反馈赋能）</div></div>
                       <div className="flex gap-4"><div className="text-blue-400 font-bold shrink-0">~ $</div><div className="text-slate-300"><span className="text-blue-300">入行指导：</span>AI 学习路径、工具落地、实践建议</div></div>
+                      <div className="flex gap-4 mt-8 pt-6 border-t border-white/5"><div className="text-blue-400 font-bold shrink-0">~ $</div><div className="text-slate-300">
+                        <span className="text-blue-300 font-bold">直接联络：</span>
+                        <div className="mt-2 text-slate-400">邮箱: <a href="mailto:originx_ai@163.com" className="text-white hover:text-blue-400 transition-colors">originx_ai@163.com</a></div>
+                        <div className="mt-1 text-slate-400">微信: <span className="text-white">1079646587</span></div>
+                      </div></div>
                       <div className="flex gap-4 mt-8"><div className="w-2 h-4 bg-blue-400 animate-pulse" /></div>
                     </motion.div>
                   ) : (
@@ -377,6 +382,11 @@ export function Home() {
                       <div className="flex gap-4"><div className="text-purple-400 font-bold shrink-0">~ $</div><div className="text-slate-300"><span className="text-purple-300">产业研究：</span>社媒数据分析、趋势追踪、桌面深度研究</div></div>
                       <div className="flex gap-4"><div className="text-purple-400 font-bold shrink-0">~ $</div><div className="text-slate-300"><span className="text-purple-300">内容赋能：</span>AI广告短片、宣传视频、高质产品视觉素材</div></div>
                       <div className="flex gap-4"><div className="text-purple-400 font-bold shrink-0">~ $</div><div className="text-slate-300"><span className="text-purple-300">培训分享：</span>团队 AI 工具培训与认知升级、场景实操教学</div></div>
+                      <div className="flex gap-4 mt-8 pt-6 border-t border-white/5"><div className="text-purple-400 font-bold shrink-0">~ $</div><div className="text-slate-300">
+                        <span className="text-purple-300 font-bold">商务联络：</span>
+                        <div className="mt-2 text-slate-400">邮箱: <a href="mailto:originx_ai@163.com" className="text-white hover:text-purple-400 transition-colors">originx_ai@163.com</a></div>
+                        <div className="mt-1 text-slate-400">微信: <span className="text-white">1079646587</span></div>
+                      </div></div>
                       <div className="flex gap-4 mt-8"><div className="w-2 h-4 bg-purple-400 animate-pulse" /></div>
                     </motion.div>
                   )}
