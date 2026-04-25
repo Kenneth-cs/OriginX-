@@ -5,7 +5,7 @@ import MDEditor from '@uiw/react-md-editor';
 import { Save, ArrowLeft, Loader2, Image as ImageIcon } from 'lucide-react';
 import { Link } from 'react-router';
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = '/api';
 
 export function NewsEditor() {
   const { id } = useParams();
@@ -87,7 +87,7 @@ export function NewsEditor() {
         }
       });
       
-      const imageUrl = `http://localhost:3000${res.data.url}`;
+      const imageUrl = `${res.data.url}`;
       setContent(prev => prev + `\n![图片](${imageUrl})\n`);
     } catch (err) {
       alert('图片上传失败');

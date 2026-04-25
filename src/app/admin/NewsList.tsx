@@ -4,7 +4,7 @@ import { Plus, Edit, Trash2, Search, Loader2 } from 'lucide-react';
 import { Link } from 'react-router';
 
 // Make sure backend URL matches
-const API_URL = 'http://localhost:3000/api';
+const API_URL = '/api';
 
 export function NewsList() {
   const [news, setNews] = useState<any[]>([]);

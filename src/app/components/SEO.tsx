@@ -13,7 +13,7 @@ export function SEO({ title, description, keywords }: SEOProps) {
 
   useEffect(() => {
     // Fetch global SEO settings from backend
-    axios.get('http://localhost:3000/api/settings/global_seo')
+    axios.get('/api/settings/global_seo')
       .then(res => {
         if (res.data.global_seo) {
           setGlobalSeo(res.data.global_seo);

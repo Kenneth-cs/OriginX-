@@ -20,7 +20,7 @@ import { Link } from "react-router";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = '/api';
 
 const FadeIn = ({ children, delay = 0, className = "" }: { children: React.ReactNode, delay?: number, className?: string }) => (
   <motion.div

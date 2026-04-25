@@ -6,7 +6,7 @@ import axios from "axios";
 import MDEditor from '@uiw/react-md-editor';
 import { SEO } from "../components/SEO";
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = '/api';
 
 const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode, delay?: number }) => (
   <motion.div

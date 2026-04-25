@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Loader2, RefreshCw, Mail, CheckCircle2 } from 'lucide-react';
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = '/api';
 
 export function ContactsList() {
   const [contacts, setContacts] = useState<any[]>([]);
