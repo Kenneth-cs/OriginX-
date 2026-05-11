@@ -122,13 +122,12 @@ export function Layout() {
               <span className="text-xs font-bold tracking-widest uppercase font-['Space_Grotesk'] text-slate-500 leading-none mt-[2px]">Origin<span className="text-blue-400">X</span></span>
             </div>
           </div>
-          <div className="flex flex-col items-center md:items-start gap-1.5 text-slate-500 text-xs font-mono">
-            <div>&copy; {new Date().getFullYear()} 佛山源极科技有限公司. All rights reserved.</div>
-            <div className="flex items-center gap-2">
-              <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" className="hover:text-slate-300 transition-colors">
-                粤ICP备2026056609号-1
-              </a>
-            </div>
+          <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 text-slate-500 text-xs font-mono">
+            <div>佛山源极科技有限公司版权所有</div>
+            <div className="w-[1px] h-3 bg-slate-600/50"></div>
+            <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" className="hover:text-slate-300 transition-colors">
+              粤ICP备2026056609号-1
+            </a>
           </div>
           <div className="flex gap-6 text-xs text-slate-500 font-mono">
             <Link to="#" className="hover:text-blue-400 transition-colors">/隐私政策</Link>
