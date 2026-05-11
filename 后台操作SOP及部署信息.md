@@ -76,3 +76,7 @@ Nginx 负责将请求转发至前端静态文件或后端 PM2 服务。
 系统所有的文字、配置和图片，本质上就是以下两个数据源，**建议每隔几周用 SFTP 下载到本地以防服务器重置**：
 1. **核心数据库文件**：`/var/www/originx/backend/data/database.sqlite` (体积极小，不到 1MB)
 2. **后台上传的图片**：`/var/www/originx/backend/public/uploads/` 目录里的文件。
+
+官网前台地址：http://124.222.88.25:8080
+管理后台地址：http://124.222.88.25:8080/admin
+后端 API 接口：统一反向代理在 http://124.222.88.25:8080/api/...
